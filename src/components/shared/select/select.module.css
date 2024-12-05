@@ -1,0 +1,64 @@
+.filtersContainer h4 {
+  color: var(--gray);
+  font-size: .8rem;
+}
+
+.filterSortBy div {
+  width: 100%;
+}
+
+.filterSortBy div button {
+  width: 100%;
+  background-color: transparent;
+  color: var(--text);
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-top: .5rem;
+  font: inherit;
+  font-size: .8rem;
+  font-weight: bold;
+  border: 1px solid var(--gray);
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filterSortBy ul {
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  background-color: transparent;
+  color: var(--text);
+  border-radius: .5rem;
+  margin-top: .5rem;
+  font: inherit;
+  font-size: .8rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  outline: none;
+  animation: collapse 0.3s forwards;
+  transition: all 0.3s ease-in-out;
+}
+
+.filterSortBy ul.isExpanded {
+  border: 1px solid var(--gray);
+  height: 142.75px;
+  transition: all 0.3s ease-in-out;
+}
+
+.filterSortBy ul li button {
+  padding: .5rem;
+  margin: 0;
+  border: none;
+  color: var(--gray);
+  transition: color .2s ease-in-out;
+  border-radius: 0rem;
+}
+
+.filterSortBy ul li button:hover {
+  background-color: var(--gray);
+  color: var(--text);
+  transition: all .2s ease-in-out;
+}

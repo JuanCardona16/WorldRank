@@ -1,0 +1,20 @@
+.filterRegion {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.filterRegion div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.filterRegion div button {
+  background-color: transparent;
+}
+
+.filterRegion div button:hover {
+  transition: all .3s ease-in-out;
+  background-color: var(--gray);
+}

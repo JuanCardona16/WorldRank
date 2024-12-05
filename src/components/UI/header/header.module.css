@@ -1,0 +1,11 @@
+.header {
+  background-image: url("../../../assets/hero-image-wr.jpg");
+  width: 100dvw;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+.filterStatus h4 {
+  margin-bottom: .4rem;
+}
+
+.filterStatus label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+}
+
+.filterStatus label p {
+  color: var(--gray);
+  font-size: .8rem;
+  user-select: none;
+}
+
+.filterStatus input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+}
