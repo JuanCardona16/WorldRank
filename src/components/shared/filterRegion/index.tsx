@@ -1,27 +1,9 @@
-import { useState } from "react";
 import styles from "./regionFilter.module.css";
+import { Regions as listRegions } from "../../UI/FilterForm/interfaces";
+import { useStore } from "../../../config";
 
-enum Regions {
-  AMERICA = "Americas",
-  ANTARCTIC = "Antarctic",
-  AFRICA = "Africa",
-  ASIA = "Asia",
-  EUROPE = "Europe",
-  OCEANIA = "Oceania",
-}
-
-export const FilterRegion = () => {
-  const [filters, setFilters] = useState<string[]>([]);
-
-  const handleClick = (value: string) => {
-
-    if (filters.includes(value)) {
-      setFilters(filters.filter((filter) => filter !== value));
-    } else {
-      setFilters([...filters, value]);
-    }
-
-  };
+export const FilterRegion: React.FC = () => {
+  const { Regions, setRegions } = useStore();
 
   return (
     <div className={styles.filterRegion}>
@@ -30,54 +12,66 @@ export const FilterRegion = () => {
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.AMERICA) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.AMERICA)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.AMERICA)}
+          onClick={() => setRegions(listRegions.AMERICA)}
         >
           Americas
         </button>
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.ANTARCTIC) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.ANTARCTIC)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.ANTARCTIC)}
+          onClick={() => setRegions(listRegions.ANTARCTIC)}
         >
           Antarctic
         </button>
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.AFRICA) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.AFRICA)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.AFRICA)}
+          onClick={() => setRegions(listRegions.AFRICA)}
         >
           Africa
         </button>
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.ASIA) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.ASIA)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.ASIA)}
+          onClick={() => setRegions(listRegions.ASIA)}
         >
           Asia
         </button>
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.EUROPE) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.EUROPE)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.EUROPE)}
+          onClick={() => setRegions(listRegions.EUROPE)}
         >
           Europe
         </button>
         <button
           type="button"
           style={{
-            backgroundColor: filters.includes(Regions.OCEANIA) ? "#6c727f" : "",
+            backgroundColor: Regions.includes(listRegions.OCEANIA)
+              ? "#6c727f"
+              : "",
           }}
-          onClick={() => handleClick(Regions.OCEANIA)}
+          onClick={() => setRegions(listRegions.OCEANIA)}
         >
           Oceania
         </button>

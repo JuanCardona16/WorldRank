@@ -1,0 +1,32 @@
+/* Section filters */
+
+.filtersContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.filtersContainer h4 {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.filtersContainer .filterSortBy select {
+  width: 100%;
+  background-color: transparent;
+  color: var(--text);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid var(--gray);
+  outline: none;
+}
+
+.filtersContainer .filterSortBy select::after {
+  padding-right: 1rem;
+}

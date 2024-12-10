@@ -39,7 +39,7 @@ button {
   font-size: 0.875rem;
   cursor: pointer;
 }
-  
+
 input {
   border: none;
   outline: none;
@@ -60,5 +60,15 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4e80ee;
 }
 

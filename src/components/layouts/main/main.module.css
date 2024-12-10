@@ -82,12 +82,12 @@ table tbody tr:hover {
   background-color: var(--gray);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
 
 table tbody tr td > img {
   background-color: red;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   width: 60px;
   height: 40px;
 }
@@ -96,37 +96,5 @@ table tbody tr td:first-child {
   width: 110px;
 }
 
-/* Section filters */
-
-.filtersContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.filtersContainer h4 {
-  color: var(--gray);
-  font-size: 0.8rem;
-}
-
-.filtersContainer .filterSortBy select {
-  width: 100%;
-  background-color: transparent;
-  color: var(--text);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-  font: inherit;
-  font-size: 0.8rem;
-  font-weight: bold;
-  border: 1px solid var(--gray);
-  outline: none;
-}
-
-.filtersContainer .filterSortBy select::after {
-  padding-right: 1rem;
-}
 
 /* Items table styles */
